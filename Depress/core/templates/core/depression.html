@@ -1,0 +1,156 @@
+{% extends 'core/base.html' %}
+{% block title %}Depression assesment{% endblock %}
+{% block content %}
+
+
+
+    <div class="question-container">
+        <form id="depressionForm">
+            <!-- Question 1 -->
+            <br><label style="color: rgb(0, 8, 8);text-align: center;" class="px-6 py-3 text-lg font-semibold bg-yellow-500 text-black rounded-xl " for="q1">1. Over the last two weeks, how often have you felt little interest or pleasure in doing things you usually enjoy?</label><br>
+            <br><select style="color: rgb(0, 8, 8);text-align: center;" class="px-6 py-3 text-lg font-semibold bg-yellow-500 text-black rounded-xl " id="q1" name="q1" required>
+                <option value="" disabled selected>Select an option</option>
+                <option value="0">Not at all</option>
+                <option value="1">Several days</option>
+                <option value="2">More than half the days</option>
+                <option value="3">Nearly every day</option>
+            </select><br><br>
+
+            <!-- Question 2 -->
+            <br><label style="color: rgb(0, 8, 8);text-align: center;" class="px-6 py-3 text-lg font-semibold bg-yellow-500 text-black rounded-xl " for="q2">2. Over the last two weeks, how often have you felt down, depressed, or hopeless?</label><br>
+            <br><select style="color: rgb(0, 8, 8);text-align: center;" class="px-6 py-3 text-lg font-semibold bg-yellow-500 text-black rounded-xl " id="q2" name="q2" required>
+                <option value="" disabled selected>Select an option</option>
+                <option value="0">Not at all</option>
+                <option value="1">Several days</option>
+                <option value="2">More than half the days</option>
+                <option value="3">Nearly every day</option>
+            </select><br><br>
+
+            <!-- Question 3 -->
+            <br><label style="color: rgb(0, 8, 8);text-align: center;" class="px-6 py-3 text-lg font-semibold bg-yellow-500 text-black rounded-xl " for="q3">3. Over the last two weeks, how often have you had trouble falling asleep, staying asleep, or sleeping too much?</label><br>
+            <br><select style="color: rgb(0, 8, 8);text-align: center;" class="px-6 py-3 text-lg font-semibold bg-yellow-500 text-black rounded-xl " id="q3" name="q3" required>
+                <option value="" disabled selected>Select an option</option>
+                <option value="0">Not at all</option>
+                <option value="1">Several days</option>
+                <option value="2">More than half the days</option>
+                <option value="3">Nearly every day</option>
+            </select><br><br>
+
+            <!-- Question 4 -->
+            <br><label style="color: rgb(0, 8, 8);text-align: center;" class="px-6 py-3 text-lg font-semibold bg-yellow-500 text-black rounded-xl " for="q4">4. Have you experienced a significant change in your appetite or weight (not due to dieting) over the last two weeks?</label><br>
+            <br><select style="color: rgb(0, 8, 8);text-align: center;" class="px-6 py-3 text-lg font-semibold bg-yellow-500 text-black rounded-xl " id="q4" name="q4" required>
+                <option value="" disabled selected>Select an option</option>
+                <option value="0">No</option>
+                <option value="1">Yes, I've been eating more</option>
+                <option value="2">Yes, I've been eating less</option>
+                <option value="3">Yes, both more and less</option>
+            </select><br><br>
+
+            <!-- Question 5 -->
+            <br><label style="color: rgb(0, 8, 8);text-align: center;" class="px-6 py-3 text-lg font-semibold bg-yellow-500 text-black rounded-xl " for="q5">5. How often have you felt tired or had little energy over the last two weeks?</label><br>
+            <br><select style="color: rgb(0, 8, 8);text-align: center;" class="px-6 py-3 text-lg font-semibold bg-yellow-500 text-black rounded-xl " id="q5" name="q5" required>
+                <option value="" disabled selected>Select an option</option>
+                <option value="0">Not at all</option>
+                <option value="1">Several days</option>
+                <option value="2">More than half the days</option>
+                <option value="3">Nearly every day</option>
+            </select><br><br>
+
+            <!-- Question 6 -->
+            <br><label style="color: rgb(0, 8, 8);text-align: center;" class="px-6 py-3 text-lg font-semibold bg-yellow-500 text-black rounded-xl " for="q6">6. Over the last two weeks, how often have you felt like a failure or that you have let yourself or your family down?</label><br>
+            <br><select style="color: rgb(0, 8, 8);text-align: center;" class="px-6 py-3 text-lg font-semibold bg-yellow-500 text-black rounded-xl " id="q6" name="q6" required>
+                <option value="" disabled selected>Select an option</option>
+                <option value="0">Not at all</option>
+                <option value="1">Several days</option>
+                <option value="2">More than half the days</option>
+                <option value="3">Nearly every day</option>
+            </select><br><br>
+
+            <!-- Question 7 -->
+            <br><label style="color: rgb(0, 8, 8);text-align: center;" class="px-6 py-3 text-lg font-semibold bg-yellow-500 text-black rounded-xl " for="q7">7. Have you had difficulty concentrating or making decisions over the last two weeks?</label><br>
+            <br><select style="color: rgb(0, 8, 8);text-align: center;" class="px-6 py-3 text-lg font-semibold bg-yellow-500 text-black rounded-xl " id="q7" name="q7" required>
+                <option value="" disabled selected>Select an option</option>
+                <option value="0">Not at all</option>
+                <option value="1">Several days</option>
+                <option value="2">More than half the days</option>
+                <option value="3">Nearly every day</option>
+            </select><br><br>
+
+            <!-- Question 8 -->
+            <br><label style="color: rgb(0, 8, 8);text-align: center;" class="px-6 py-3 text-lg font-semibold bg-yellow-500 text-black rounded-xl " for="q8">8. Over the last two weeks, how often have you thought that you would be better off dead or of hurting yourself in some way?</label><br>
+            <br><select style="color: rgb(0, 8, 8);text-align: center;" class="px-6 py-3 text-lg font-semibold bg-yellow-500 text-black rounded-xl " id="q8" name="q8" required>
+                <option value="" disabled selected>Select an option</option>
+                <option value="0">Not at all</option>
+                <option value="1">Several days</option>
+                <option value="2">More than half the days</option>
+                <option value="3">Nearly every day</option>
+            </select><br><br>
+
+            <!-- Question 9 -->
+            <br><label style="color: rgb(0, 8, 8);text-align: center;" class="px-6 py-3 text-lg font-semibold bg-yellow-500 text-black rounded-xl " for="q9">9. Do you have difficulty enjoying activities you used to find pleasurable over the last two weeks?</label><br>
+            <br><select style="color: rgb(0, 8, 8);text-align: center;" class="px-6 py-3 text-lg font-semibold bg-yellow-500 text-black rounded-xl " id="q9" name="q9" required>
+                <option value="" disabled selected>Select an option</option>
+                <option value="0">Not at all</option>
+                <option value="1">Several days</option>
+                <option value="2">More than half the days</option>
+                <option value="3">Nearly every day</option>
+            </select><br><br>
+
+            <!-- Question 10 -->
+            <br><label style="color: rgb(0, 8, 8);text-align: center;" class="px-6 py-3 text-lg font-semibold bg-yellow-500 text-black rounded-xl " for="q10">10. Have you noticed a change in your ability to function at work, school, or in your daily activities over the last two weeks?</label><br>
+            <br><select style="color: rgb(0, 8, 8);text-align: center;" class="px-6 py-3 text-lg font-semibold bg-yellow-500 text-black rounded-xl " id="q10" name="q10" required>
+                <option value="" disabled selected>Select an option</option>
+                <option value="0">No change</option>
+                <option value="1">Slight difficulty</option>
+                <option value="2">Moderate difficulty</option>
+                <option value="3">Severe difficulty</option>
+            </select><br><br>
+
+            <input type="button" value="Submit" onclick="assessDepression()" style="color: rgb(0, 8, 8);text-align: center;" class="px-6 py-3 text-lg font-semibold bg-yellow-500 text-black rounded-xl ">
+        </form>
+    </div>
+
+    <div class="result-container" id="resultContainer">
+        <br><h2 style="color: rgb(0, 8, 8);text-align: center;" class="px-6 py-3 text-lg font-semibold bg-yellow-500 text-black rounded-xl ">Assessment Result:</h2>
+        <br><p id="assessmentResult" style="color: rgb(0, 8, 8);text-align: center;" class="px-6 py-3 text-lg font-semibold bg-yellow-500 text-black rounded-xl "></p>
+    </div>
+
+    <script>
+        function assessDepression() {
+            var answers = {
+                q1: parseInt(document.getElementById('q1').value),
+                q2: parseInt(document.getElementById('q2').value),
+                q3: parseInt(document.getElementById('q3').value),
+                q4: parseInt(document.getElementById('q4').value),
+                q5: parseInt(document.getElementById('q5').value),
+                q6: parseInt(document.getElementById('q6').value),
+                q7: parseInt(document.getElementById('q7').value),
+                q8: parseInt(document.getElementById('q8').value),
+                q9: parseInt(document.getElementById('q9').value),
+                q10: parseInt(document.getElementById('q10').value)
+            };
+
+            var totalScore = answers.q1 + answers.q2 + answers.q3 + answers.q4 + answers.q5 +
+                             answers.q6 + answers.q7 + answers.q8 + answers.q9 + answers.q10;
+
+            var resultContainer = document.getElementById('resultContainer');
+            var assessmentResult = document.getElementById('assessmentResult');
+
+            var interpretation = "";
+
+            if (totalScore <= 9) {
+                interpretation = "Your mood seems relatively stable, but it's important to monitor your mental well-being.";
+            } else if (totalScore <= 19) {
+                interpretation = "You are experiencing mild depressive symptoms. Consider reaching out to a mental health professional.";
+            } else if (totalScore <= 29) {
+                interpretation = "You are experiencing moderate depressive symptoms. It's advisable to seek professional help.";
+            } else {
+                interpretation = "You are experiencing severe depressive symptoms. Please seek immediate professional assistance.";
+            }
+
+            assessmentResult.innerHTML = interpretation;
+            resultContainer.style.display = 'block';
+        }
+    </script>
+
+{% endblock %}

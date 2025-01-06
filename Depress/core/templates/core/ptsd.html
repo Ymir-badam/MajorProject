@@ -1,0 +1,91 @@
+{% extends 'core/base.html' %}
+{% block title %}PTSD assesment{% endblock %}
+{% block content %}
+    
+
+<body>
+
+    <h2>PTSD Assessment</h2>
+
+    <div class="question-container">
+        <form id="ptsdForm">
+            <!-- Question 1 -->
+            <label style="color: rgb(0, 8, 8);text-align: center;" class="px-6 py-3 text-lg font-semibold bg-yellow-500 text-black rounded-xl " for="q1" style="color: rgb(0, 8, 8);text-align: center;" class="px-6 py-3 text-lg font-semibold bg-yellow-500 text-Black rounded-xl ">1. Have you experienced a traumatic event, such as a life-threatening situation or serious injury?</label style="color: rgb(0, 8, 8);text-align: center;" class="px-6 py-3 text-lg font-semibold bg-yellow-500 text-black rounded-xl "><br>
+            <br>
+                <select id="q1" name="q1" required style="color: rgb(0, 8, 8);text-align: center;" class="px-6 py-3 text-lg font-semibold bg-yellow-500 text-Black rounded-xl " style="color: rgb(0, 8, 8);text-align: center;" class="px-6 py-3 text-lg font-semibold bg-yellow-500 text-Black rounded-xl "> 
+                <option value="" disabled selected>Select an option</option>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select><br><br>
+
+            <!-- Question 2 -->
+            <label style="color: rgb(0, 8, 8);text-align: center;" class="px-6 py-3 text-lg font-semibold bg-yellow-500 text-black rounded-xl " for="q2" style="color: rgb(0, 8, 8);text-align: center;" class="px-6 py-3 text-lg font-semibold bg-yellow-500 text-Black rounded-xl ">2. Over the last month, have you experienced intrusive memories, nightmares, or flashbacks related to the traumatic event?</label style="color: rgb(0, 8, 8);text-align: center;" class="px-6 py-3 text-lg font-semibold bg-yellow-500 text-black rounded-xl "><br>
+                <br><select id="q2" name="q2" required style="color: rgb(0, 8, 8);text-align: center;" class="px-6 py-3 text-lg font-semibold bg-yellow-500 text-Black rounded-xl " style="color: rgb(0, 8, 8);text-align: center;" class="px-6 py-3 text-lg font-semibold bg-yellow-500 text-Black rounded-xl ">
+                <option value="" disabled selected>Select an option</option>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select><br><br>
+
+            <!-- Question 3 -->
+            <label style="color: rgb(0, 8, 8);text-align: center;" class="px-6 py-3 text-lg font-semibold bg-yellow-500 text-black rounded-xl " for="q3">3. Do you avoid reminders or situations that bring back memories of the traumatic event?</label style="color: rgb(0, 8, 8);text-align: center;" class="px-6 py-3 text-lg font-semibold bg-yellow-500 text-black rounded-xl "><br>
+                <br><select id="q3" name="q3" required style="color: rgb(0, 8, 8);text-align: center;" class="px-6 py-3 text-lg font-semibold bg-yellow-500 text-Black rounded-xl ">
+                <option value="" disabled selected>Select an option</option>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select><br><br>
+
+            <!-- Question 4 -->
+            <label style="color: rgb(0, 8, 8);text-align: center;" class="px-6 py-3 text-lg font-semibold bg-yellow-500 text-black rounded-xl " for="q4">4. Have you experienced negative changes in your thoughts and mood since the traumatic event?</label style="color: rgb(0, 8, 8);text-align: center;" class="px-6 py-3 text-lg font-semibold bg-yellow-500 text-black rounded-xl "><br>
+                <br><select id="q4" name="q4" required style="color: rgb(0, 8, 8);text-align: center;" class="px-6 py-3 text-lg font-semibold bg-yellow-500 text-Black rounded-xl ">
+                <option value="" disabled selected>Select an option</option>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select><br><br>
+
+            <!-- Question 5 -->
+            <label style="color: rgb(0, 8, 8);text-align: center;" class="px-6 py-3 text-lg font-semibold bg-yellow-500 text-black rounded-xl " for="q5">5. Have you experienced heightened arousal or reactivity, such as being easily startled, having difficulty sleeping, or feeling on edge?</label style="color: rgb(0, 8, 8);text-align: center;" class="px-6 py-3 text-lg font-semibold bg-yellow-500 text-black rounded-xl "><br>
+                <br><select id="q5" name="q5" required style="color: rgb(0, 8, 8);text-align: center;" class="px-6 py-3 text-lg font-semibold bg-yellow-500 text-Black rounded-xl ">
+                <option value="" disabled selected>Select an option</option>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select><br><br>
+
+            <input type="button" value="Submit" onclick="assessPTSD()"  style="color: rgb(0, 8, 8);text-align: center;" class="px-6 py-3 text-lg font-semibold bg-yellow-500 text-black rounded-xl ">
+        </form>
+    </div>
+<br>
+    <div class="result-container" id="resultContainer">
+        <h2 style="color: rgb(0, 8, 8);text-align: center;" class="px-6 py-3 text-lg font-semibold bg-yellow-500 text-black rounded-xl ">Assessment Result:</h2>
+        
+        <br><p id="assessmentResult" style="color: rgb(0, 8, 8);text-align: center;" class="px-6 py-3 text-lg font-semibold bg-yellow-500 text-black rounded-xl "></p>
+    </div>
+
+    <script>
+        function assessPTSD() {
+            var answers = {
+                q1: parseInt(document.getElementById('q1').value),
+                q2: parseInt(document.getElementById('q2').value),
+                q3: parseInt(document.getElementById('q3').value),
+                q4: parseInt(document.getElementById('q4').value),
+                q5: parseInt(document.getElementById('q5').value)
+            };
+
+            var totalScore = answers.q1 + answers.q2 + answers.q3 + answers.q4 + answers.q5;
+
+            var resultContainer = document.getElementById('resultContainer');
+            var assessmentResult = document.getElementById('assessmentResult');
+
+            var interpretation = "";
+
+            if (totalScore <= 2) {
+                interpretation = "Your responses suggest a low likelihood of PTSD symptoms. However, if you have concerns, consider seeking professional advice.";
+            } else {
+                interpretation = "Your responses suggest the possibility of PTSD symptoms. It is important to consult with a mental health professional for a comprehensive evaluation and guidance.";
+            }
+
+            assessmentResult.innerHTML = interpretation;
+            resultContainer.style.display = 'block';
+        }
+    </script>
+
+{% endblock %}

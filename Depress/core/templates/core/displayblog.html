@@ -1,0 +1,21 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Welcome{% endblock %}
+{% block content %}
+        <div class="px-6 py-6">
+            
+                
+                <h1 style="color: rgb(0, 8, 8);text-align: center;" class="px-6 py-3 text-lg font-semibold bg-yellow-500 text-Black rounded-xl ">{{ blog.Blog_title }}</h1>
+                <br>
+                <h1 style="color: rgb(1, 10, 10);"  class="px-6 py-3 text-lg font-semibold bg-green-500 text-Black rounded-xl ">{{ blog.Blog_content }}</h1>
+                <br>
+                <h1 style="color: rgb(0, 8, 8);"  class="px-6 py-3 text-lg font-semibold bg-yellow-500 text-Black rounded-xl ">Written by {{ blog.Blog_author }}</h1>
+                <br>
+                {% if request.user is not blog.Blog_author %}
+                <a href="/room/{{blog.Blog_author}}" class="px-6 py-3 text-lg font-semibold bg-orange-500 text-white rounded-xl hover:bg-gray-700">Chat with Author</a>
+               {% else %}
+               <a href="/room/{{blog.Blog_author}}" class="px-6 py-3 text-lg font-semibold bg-orange-500 text-white rounded-xl hover:bg-gray-700">Edit or delete</a>
+                {% endif %}
+            </div>
+        
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Welcome{% endblock %}
+
+{% block content %}
+     <h1 style="color: rgb(135, 136, 136);">jae</h1>
+        <div class="px-6 py-6">
+            {% for i in blogs %}
+            <h1 style="color: rgb(135, 136, 136);">{{ i.Blog_title }}</h1>
+            <h1 style="color: rgb(135, 136, 136);">{{ i.Blog_content }}</h1>
+            <h1 style="color: rgb(135, 136, 136);">{{ i.Blog_author }}</h1>
+            <br>
+            <br>
+            {% endfor %}
+        </div>
+{% endblock %}

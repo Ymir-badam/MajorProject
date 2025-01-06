@@ -1,0 +1,16 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Welcome{% endblock %}
+{% block content %}
+<br>
+<h1 style="color: rgb(6, 11, 11);text-align: center;" class="px-6 py-3 text-lg font-semibold bg-yellow-500 text-Black rounded-xl hover:bg-blue-500">BLOGS</h1>
+<br>        
+<div class="px-6 py-6">
+            {% for i in blogs %}
+            <a href="/displayblog/{{i}}" style="color: rgb(6, 11, 11);text-align: center;" class="px-6 py-3 text-lg font-semibold bg-yellow-500 text-Black rounded-xl hover:bg-blue-500">{{ i.Blog_title }} by {{ i.Blog_author }}</a>
+            
+            <br><br><br>
+            {% endfor %}
+        </div>
+        
+{% endblock %}
