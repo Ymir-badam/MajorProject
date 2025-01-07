@@ -1,13 +1,13 @@
 {
   "type": "service_account",
-  "project_id": "makemygift",
-  "private_key_id": "807c7125d1989dcc722cea346bab3451fc72d119",
-  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC+tIu5aCyyC3yc\nwrtYW1wB5OU9hXrmvdSHGhTEULs472+7bqf9bbqhJwqp9ErOQ0u9VaALYjsVliJH\na0cjDyCea7PFd+mniCqe9RtP+DRGmotXmA9ceS6kZHvxZQrjADV6C5N3Do2bX0GJ\naXCMbpiQIGe0AMDGT1ZcLmXSOyqtArLcJMmxZiwgCRiOuUuSHbQyCxik5kV2CGkc\n9eM1ar0+EDHWK9pIU7SIeBvjyW8OKGvaRwMTBKt3VrCxR7rvv+A/Fabt2v+4zxea\n+7JX9y6dHF01CBYJid8gttHZT3SvInqLLjoLEvdJKAOUka7TtD+OCliKfKIR1Pkg\nnPK4kRwNAgMBAAECggEAQaxZRcM7SSEti6p/6+CiYcCatUIHXfjXfKMdrbGDmArU\ntn5X+a1VDPQt9vM646dHKO+YyvLMGBX4vhGSkN8/w26hnQo7e8cnrlAIVNTL49iK\nzeJ+v8C3sEMub6X1RtEmmV3tLZ3kZDI8ln6qFKJthYyzScjMmj5uJhaQWAKqIqPo\nEBuEamgIn//MQ6jyrpywvp4wlf+q39gTZ4eL9coqeBflU8Xa0R1m2BmWO1rA5nfq\nL2Q0+lWew2vWdr5P47oKGscYYCBStMesuLiU4+6vLqTVurlKJxHod1dt+nqxg28x\nE4a3KZvuL52vGpj42Fe6tdUwpVL0O2o7AT1ifalyHQKBgQDhYks8YiRMAM9GNpMG\nDB4G9X8op3ko3S7lUGaaQOKOWFQ48uvvH4i82cYuVkPzjwXVy6/vLESePZuU8qHt\nKMgOgdBKLNsv7NwXixWuBFEbMOuryCLA8u6AWTwbFWT4ldcxneJt49kJlLkYPh80\nLtpHbLJpGpZA/Eas9xtsmqOKRwKBgQDYnE2hV5nFn9bZ3vJ8p8YhMULXRXxBi/bv\njPXJOrLDCLBxZj9yZA64PEAtOMFhwcEtLRwU3ABpIybJ6Och3MUkBgLkAVcTQ30b\nWU6R1gqP6IJbvtN389zV/cG6kPSjBskhLEZVbCUvPQnVbmFKF6W5C6U+Y80uHa77\ntljz/A79CwKBgQCb5fXMqsYYnGbDVnSUNkV+4sk2QcGY9oW9sMOH52HOvGJlkgKI\nwPNAThK7cohGLKQIon/rnF9KZar8eGhxN0hKYJjG9ggXOmtzDY3NdMb1W/1oMWN4\nu5ElzpO42C+jk2HqvB8ni/dQnUL69d13pwDtbs5pzS4pfVcVxUd+8+gzeQKBgFuJ\nWej3qvzvugyiAZkaEUlPlu5/562PZ0/+IpPiIU74KhAR5HgDvpCurXQuytHz3h2o\nNXi/K9FCUI78xEf0Er9RZwFRa6mxWHopOGG6sQX1fLkmoBjNziIENU0RGsCWCoLh\nQeuxYtlekvxFxAlaiuby++asqDV3x82JVnfsqazXAoGAY9KapbXmw0uGUSxOlFku\n071otb/WRF3xD9/wJ/u4MWKjskpTEriHdPaThmHT4NA3y5Tmzik0VChLGemREVvq\nW+wD11/OJJZ9pVN+AYzhh0pVKPE8apYY1s5MLRjKayu3lG36nNUvV2Gs2UZSc51L\nRDlmXbAnq2MdxAfMIDJBqs4=\n-----END PRIVATE KEY-----\n",
-  "client_email": "makemygift@makemygift.iam.gserviceaccount.com",
-  "client_id": "104754318814406806630",
-  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-  "token_uri": "https://oauth2.googleapis.com/token",
-  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/makemygift%40makemygift.iam.gserviceaccount.com",
-  "universe_domain": "googleapis.com"
+  "project_id": "",
+  "private_key_id": "",
+  "private_key": "",
+  "client_email": "",
+  "client_id": "",
+  "auth_uri": "",
+  "token_uri": "",
+  "auth_provider_x509_cert_url": "",
+  "client_x509_cert_url": "",
+  "universe_domain": ""
 }
