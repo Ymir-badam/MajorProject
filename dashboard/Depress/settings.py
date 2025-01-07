@@ -20,8 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-4@gbc$voab#1t1lcm21vax)zw-ql)!u2$viu!f_a0#0*6x=az4'
-
+SECRET_KEY = ''
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
@@ -127,13 +126,13 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-RAZOR_KEY_ID = 'rzp_test_UXPISq3kdlLmDI'
-RAZOR_KEY_SECRET = 'Tge6gXs6kc36EpXRDsJUswk6'
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+RAZOR_KEY_ID = ''
+RAZOR_KEY_SECRET = ''
+EMAIL_BACKEND = ''
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_FROM = 'makemygift8@gmail.com'
-EMAIL_HOST_USER = 'makemygift8@gmail.com'
-EMAIL_HOST_PASSWORD = 'llaarpnhfdfuoejs'
+EMAIL_FROM = ''
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 import os
